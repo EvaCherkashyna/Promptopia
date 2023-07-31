@@ -38,11 +38,11 @@ const Nav = () => {
                 Sign Out
               </button>
               <Link href="/profile">
-                <Image src="/assets/images/logo.svg"
+                <img className='rounded-full'
+                 src={session?.user.image}
                   width={37}
                   height={37}
                   alt='profile'
-
                 />
               </Link>
             </div>
@@ -60,9 +60,10 @@ const Nav = () => {
       <div className="sm:hidden flex relative">
         {session?.user ?
           (<div className='flex'>
-            <Image src="/assets/images/logo.svg"
+            <img src={session?.user.image}
               width={37}
               height={37}
+              className='rounded-full'
               alt='profile'
               onClick={() => setToggleDropdown(prev => !prev)}
             />

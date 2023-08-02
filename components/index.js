@@ -4,5 +4,5 @@ import Nav from "./Nav";
 import Profile from "./Profile";
 import PromptCard from "./PromptCard";
 import Provider from "./Provider";
-
-export {Feed,Form,Nav,Profile,PromptCard,Provider}
+import PromptCardList from "./PromptCardList";
+export {Feed,Form,Nav,Profile,PromptCard,Provider,PromptCardList}
